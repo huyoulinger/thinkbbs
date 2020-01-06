@@ -1,2 +1,6 @@
-*
-!.gitignore
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# 忽略 vi/vim 非正常关闭文件
+*.swp
