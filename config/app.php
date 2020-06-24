@@ -3,11 +3,13 @@
 // | 应用设置
 // +----------------------------------------------------------------------
 
+use think\facade\Env;
+
 return [
     // 部署环境
     'env' => env('app.env', 'production'),
     // 应用地址
-    'app_host'         => env('app.host', ''),
+    'app_host'         => Env::get('app.host', ''),
     // 应用的命名空间
     'app_namespace'    => '',
     // 是否启用路由
@@ -17,7 +19,7 @@ return [
     // 默认应用
     'default_app'      => 'index',
     // 默认时区
-    'default_timezone' => 'Asia/Shanghai',
+    'default_timezone' => Env::get('app.default_timezone', 'Asia/Shanghai'),
 
     // 应用映射（自动多应用模式有效）
     'app_map'          => [],

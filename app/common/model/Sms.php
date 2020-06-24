@@ -9,7 +9,7 @@ use Overtrue\EasySms\EasySms;
 use Overtrue\EasySms\Exceptions\NoGatewayAvailableException;
 
 /**
- * @mixin think\Model
+ * @
  */
 class Sms
 {
